@@ -11,8 +11,12 @@ button, button:focus {
   text-decoration: none;
 }
 
+.copyright .my-name {
+  color: #ffffff;
+}
+
 .copyright .my-name:hover {
-  color: #FF4500;
+  color: #20B2AA;
 }
 
 .form-row .subscribe-btn:hover {
@@ -63,6 +67,22 @@ button, button:focus {
 
 .color-second-bg {
   background: #20B2AA;
+}
+
+.color-third {
+  color: #00786d;
+}
+
+.color-third-bg {
+  background: #00786d;
+}
+
+.color-forth {
+  color: #00524a;
+}
+
+.color-forth-bg {
+  background: #00524a;
 }
 
 .color-yellow {

@@ -1,0 +1,39 @@
+/* Sign-in and Sign-up Style */
+
+.card-body .for-label{
+    font-size: 0.8em;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 0.7em;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 0.7em;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 0.7em;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 0.7em;
+  }
+
+.card-body .p-viewer, .p-viewer2{
+    float: right;
+    margin-top: -30px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 1;
+    cursor:pointer;
+  }
+  
+.card-body .fa-eye {
+    color: #000;
+  }
+
+.form-group .facebook:hover{
+  background-color: #0c978f;
+}
+
+.form-group .google:hover{
+  background-color: #e73f01;
+}

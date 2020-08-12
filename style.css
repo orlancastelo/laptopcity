@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+/* Sass Template */
+/* Global Classes */
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.copyright .my-name {
+  text-decoration: none;
+}
+
+.copyright .my-name:hover {
+  color: #FF4500;
+}
+
+.form-row .subscribe-btn:hover {
+  background-color: #0c978f;
+}
+
+/* Typography Classes */
+.font-baloo {
+  font-family: font-baloo;
+}
+
+.font-rale {
+  font-family: font-railway;
+}
+
+.font-rubik {
+  font-family: font-rubik;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/* Color Template */
+.color-primary {
+  color: #003859;
+}
+
+.color-primary-bg {
+  background: #003859;
+}
+
+.color-second {
+  color: #20B2AA;
+}
+
+.color-second-bg {
+  background: #20B2AA;
+}
+
+.color-yellow {
+  color: #FFD289;
+}
+
+.color-yellow-bg {
+  background: #FFD289;
+}
+
+.color-orange {
+  color: #FF4500;
+}
+
+.color-orange-bg {
+  background: #FF4500;
+}
+
+/* Topsale Template */
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#top-sale .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #003859;
+  padding: 0 1rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
+/* Special Price Template */
+#special-price .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Sign-in and Sign-up Style */
+.card-body .for-label {
+  font-size: 0.8em;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 0.7em;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 0.7em;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 0.7em;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 0.7em;
+}
+
+.card-body .p-viewer, .p-viewer2 {
+  float: right;
+  margin-top: -30px;
+  margin-right: 5px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.card-body .fa-eye {
+  color: #000;
+}
+
+.form-group .facebook:hover {
+  background-color: #0c978f;
+}
+
+.form-group .google:hover {
+  background-color: #e73f01;
+}
+
+/*# sourceMappingURL=style.css.map */

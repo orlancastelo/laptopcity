@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop City</title>
+
+     <!-- Bootstrap CDN -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ 
+     <!-- Font-Awesome Icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+ 
+     <!-- Custom CSS File -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- Start Header -->
+     <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <p class="font-rale font-size-12 text-black-50 m-0">Laptop City</p>
+
+            <div class="font-rale font-size-14">
+                <a href="login.html" class="px-3 border-right border-left text-dark">Login</a>
+                <a href="register.html" class="px-3 border-right text-dark">Register</a>
+                <a href="#" class="px-3 border-right text-dark">Whislist (0)</a>
+            </div>
+        </div>
+
+        <!-- Start Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
+            <a class="navbar-brand" href="#">Laptop City PH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav m-auto font-rubik">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">On Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Comming Soon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <form action="#" class="font-size-14 font-rale">
+                  <a href="#" class="py-2 rounded-pill color-primary-bg">
+                    <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                  </a>
+              </form>
+            </div>
+        </nav>
+          <!-- End Navigation Bar -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Login Start -->
+    <main id="login-main-content">
+        <div class="container h-100 py-5">
+            <div class="row h-100 justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-default shadow">
+                        <div class="card-header color-second-bg">
+                            <h6 class="m-0 text-white"><i class="fas fa-user"></i> 
+                                Welcome to Laptop City! Please login
+                            </h6>
+                        </div>
+                            <div class="card-body pb-0">
+                                <form action="#" method="post" class="">
+                                    <div class="text-right">
+                                        <label class="for-label">
+                                            New member? <a id="register" href="#">Register</a> here.
+                                        </label>
+                                    </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="for-label">Email Address*:</label>
+                                        <input type="email" class="form-control email" name="email" placeholder="Please enter your email address">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="for-label">Password*:</label>
+                                        <input type="password" class="form-control password" name="password" placeholder="Minimum 6 character with a number and a letter">
+                                        <span class="p-viewer">
+                                          <i class="fas fa-eye" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <div class="form-group col-md-12 text-right">
+                                        <label class="for-label">
+                                            <a href="#" id="forgot-link">Forgot Password?</a>
+                                        </label>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="for-label">Login with:</label>
+                                        <button class="btn color-second-bg form-control text-white facebook">
+                                            <i class="fab fa-facebook-f float-left mt-1" aria-hidden="true"></i>Facebook
+                                        </button>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label class="for-label">Login with:</label>
+                                        <button class="btn color-orange-bg form-control text-white google">
+                                            <i class="fab fa-google float-left mt-1" aria-hidden="true"></i>Gmail
+                                        </button>
+                                    </div>
+                                    <div class="form-group col-md-12 pt-2">
+                                        <button class="btn btn-block btn-warning text-white">SIGN IN
+                                            <i class="fas fa-sign-in-alt float-left mt-1 signup-icon" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Login End -->
+    
+    <!-- Start Footer -->
+    <footer id="footer" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <h4 class="font-rubik font-size-20">Laptop City</h4>
+                    <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore at qui et fuga, praesentium recusandae unde soluta culpa nihil aperiam animi dolorem vitae amet, deleniti facere quae nisi! Sapiente!</p>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <h4 class="font-rubik font-size-20">Newsletter</h4>
+                    <form class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col">
+                            <button class="btn color-second-bg mb-2 text-white subscribe-btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-2 col-12 pt-3">
+                    <h4 class="font-rubik font-size-20">Information</h4>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms and Condition</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-12 pt-3">
+                    <h4 class="font-rubik font-size-20">Account</h4>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newsletters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright text-center bg-dark text-white pt-4">
+            <p class="font-rale font-size-14">&copy; Copyright 2020, Designed and Created By: <a href="#" class="color-second my-name">Orlan Castelo</a></p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap CDN JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

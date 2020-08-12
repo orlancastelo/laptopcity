@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop City</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Olw Carousel 2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Font-Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JQuery For Loading Page on Div -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Start Header -->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <p class="font-rale font-size-12 text-black-50 m-0">Laptop City</p>
+
+            <div class="font-rale font-size-14">
+                <a href="#" class="signin px-3 border-right border-left text-dark">Login</a>
+                <a href="#" class="px-3 border-right text-dark">Register</a>
+                <a href="#" class="px-3 border-right text-dark">Whislist (0)</a>
+            </div>
+        </div>
+
+        <!-- Start Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
+            <a class="navbar-brand" href="#">Laptop City PH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav m-auto font-rubik">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">On Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Comming Soon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <form action="#" class="font-size-14 font-rale">
+                  <a href="#" class="py-2 rounded-pill color-primary-bg">
+                    <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                  </a>
+              </form>
+            </div>
+        </nav>
+          <!-- End Navigation Bar -->
+    </header>
+    <!-- End Header -->
+
+    <div id="test-content">
+        <script>
+            $.get('login.html')
+                .success(function(data) {
+                    $(".signin").click(function(){
+                    $('#test-content').html(data);
+                });
+            });
+        </script>
+    </div> 
+
+    <!-- Start Main Content -->
+    <main id="main-content">
+        <!-- Start Owl-Carousel-2 -->
+        <section id="banner-area">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./assets/header-photo1.png" alt="Banner1">
+                </div>
+                <div class="item">
+                    <img src="./assets/header-photo2.png" alt="Banner2">
+                </div>
+            </div>
+        </section>
+        <!-- End Owl-Carousel-2 -->
+
+        <!-- Start Top Sale -->
+        <section id="top-sale">
+            <div class="container py-5">
+                <h4 class="font-rubik font-size-20">Top Sale</h4>
+                <hr>
+
+                <!-- Start Owl Carousel 2 -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/ms-surface-pro.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Microsoft Surface Pro</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 145,000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/macbook-air.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Macbook Air</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 74,000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/dell-xps-13.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Dell XPS 13</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 55, 000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/samsung-notebook-9.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Samsung Notebook 9</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 55, 000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/lenovo-yoga-940-14.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Lenovo Yoga S940 14</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 109, 000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/hp-envy-x360-13.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>HP Envy X360 13</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 93,000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/asus-zenbook-14.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Asus Zenbook 14</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 71,000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/acer-swift-7.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Acer Swift 7</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 85,000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Owl Carousel 2 -->
+            </div>
+        </section>
+        <!-- End Top Sale -->
+
+        <!-- Start Special Price -->
+        <section id="special-price">
+            <div class="container">
+                <h4 class="font-rubik font-size-20">Special Price</h4>
+                <div id="filters" class="button-group text-right font-baloo font-size-16">
+                    <button class="btn is-checked" data-filer="*">All Brand</button>
+                    <button class="btn" data-filter=".Microsoft">Microsoft</button>
+                    <button class="btn" data-filter=".Macbook">Macbook</button>
+                    <button class="btn" data-filter=".Dell">Dell</button>
+                    <button class="btn" data-filter=".Samsung">Samsung</button>
+                    <button class="btn" data-filter=".Lenovo">Lenovo</button>
+                    <button class="btn" data-filter=".HP">HP</button>
+                    <button class="btn" data-filter=".Asus">Asus</button>
+                    <button class="btn" data-filter=".Acer">Acer</button>
+                </div>
+
+                <div class="grid">
+                    <div class="grid-item Microsoft border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/ms-surface-3.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Microsoft Surface 3</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 95,000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item Macbook border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/macbook-pro.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Macbook Pro</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 170,000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+             
+                    <div class="grid-item Dell border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/dell-g3-15.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Dell XPS 13</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 45,000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item Samsung border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/samsung-chromebook-xE50.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Samsung Chromebook XE50</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 70,000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item Lenovo border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/lenovo-legion-y545-15.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Lenovo Legion Y545 15</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 90,000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item HP border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/hp-spectre-x360.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>HP Spectre X360</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 95,000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item Asus border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/asus-zenbook-14.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Asus Zenbook 14</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 71,000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item Acer border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/acer-swift-7.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Acer Swift 7</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 85,000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-item Microsoft border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/ms-surface-pro.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Microsoft Surface Pro</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 145,000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item Macbook border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/macbook-air.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Macbook Air</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 74, 000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item Dell border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/dell-xps-13.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Dell XPS 13</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 55, 000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item Samsung border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/samsung-notebook-9.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Samsung Notebook 9</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 55, 000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item Lenovo border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/lenovo-yoga-940-14.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>Lenovo Yoga 940 14</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 109, 000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item HP border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/hp-envy-x360-13.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>HP Envy X360 13</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 93, 000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item Asus border">
+                        <div class="item py-2" style="width: 200px;">
+                            <div class="product font-rale">
+                                <a href="#"><img src="./assets/products/asus-vivobook-s14.png" alt="product" class="img-fluid"></a>
+                                <div class="text-center">
+                                    <h6>HP Envy X360 13</h6>
+                                    <div class="rating text-warning font-size-12">
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </div>
+                                    <div class="price py-2">
+                                        <span>₱ 47, 000.00</span>
+                                    </div>
+                                    <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Special Price -->
+
+        <!-- Start Banner Ads -->
+        <section id="banner_adds">
+            <div class="container py-5 text-center">
+                <img src="./assets/banner1-cr-500x150.jpg" alt="banner" class="img-fluid">
+                <img src="./assets/banner2-cr-500x150.jpg" alt="banner" class="img-fluid">
+            </div>
+        </section>
+        <!-- End Banner Ads -->
+
+        <!-- Start New Phones -->
+        <section id="new-phones">
+            <div class="container">
+                <h4 class="font-rubik font-size-20">New Laptop</h4>
+
+                <!-- Start Owl Carousel 2 -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item py-2 bg-light">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/hp-elite-dragonfly.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>HP Elite Dragonfly</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 80, 000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 bg-light">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/acer-chromebook-314.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Acer Chromebook 314</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 48, 000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 bg-light">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/macbook-air.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Macbook Air Pro</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 100, 000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 bg-light">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/ms-surface-3.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Microsoft Surface 3</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 145, 000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 bg-light">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/samsung-notebook-9.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Samsung Notebook 9</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 55, 000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 bg-light">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/lenovo-legion-y545-15.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Lenovo Legion Y545 15</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 95, 000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 bg-light">
+                        <div class="product font-rale">
+                            <a href="#"><img src="./assets/products/macbook-pro.png" alt="product" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6>Macbook Pro</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₱ 70, 000.00</span>
+                                </div>
+                                <button type="submit" class="btn color-orange-bg text-white font-size-12">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Owl Carousel 2 -->
+            </div>
+        </section>
+        <!-- End New Phones -->
+
+        <!-- Start Blogs -->
+        <section id="blogs">
+            <div class="container py-4">
+                <h4 class="font-rubik font-size-20">Latest Blogs</h4>
+                <hr>
+            
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+                            <h5 class="card-title font-size-16">Upcoming Laptop</h5>
+                            <img src="./assets/blog/blog1.jpg" alt="card-image" class="card-img-top">
+                            <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus pariatur sed odio dignissimos veritatis eius quidem voluptatum enim laudantium excepturi!</p>
+                            <a href="#" class="color-second text-left">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+                            <h5 class="card-title font-size-16">Latest on Social Media</h5>
+                            <img src="./assets/blog/blog2.jpg" alt="card-image" class="card-img-top">
+                            <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus pariatur sed odio dignissimos veritatis eius quidem voluptatum enim laudantium excepturi!</p>
+                            <a href="#" class="color-second text-left">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+                            <h5 class="card-title font-size-16">Latest on Wed Development</h5>
+                            <img src="./assets/blog/blog3.jpg" alt="card-image" class="card-img-top">
+                            <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus pariatur sed odio dignissimos veritatis eius quidem voluptatum enim laudantium excepturi!</p>
+                            <a href="#" class="color-second text-left">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Blogs -->
+
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Start Footer -->
+    <footer id="footer" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12">
+                    <h4 class="font-rubik font-size-20">Onlineshop PH</h4>
+                    <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolore at qui et fuga, praesentium recusandae unde soluta culpa nihil aperiam animi dolorem vitae amet, deleniti facere quae nisi! Sapiente!</p>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <h4 class="font-rubik font-size-20">Newsletter</h4>
+                    <form class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary mb-2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-2 col-12">
+                    <h4 class="font-rubik font-size-20">Information</h4>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms and Condition</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-12">
+                    <h4 class="font-rubik font-size-20">Account</h4>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
+                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newsletters</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="copyright text-center bg-dark text-white py-2">
+        <p class="font-rale font-size-14">&copy; Copyright 2020, Designed and Created By: <a href="#" class="color-second">Orlan Castelo</a></p>
+    </div>
+
+    <!-- Bootstrap CDN JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel 2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Isotope CDN Plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="./index.js"></script>
+
+</body>
+</html>

@@ -22,19 +22,19 @@
 <body>
 
     <!-- Start Header -->
-    <header id="header">
+    <header id="header" class="fixed-top">
         <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
-            <p class="font-rale font-size-12 text-black-50 m-0"></p>
-
-            <div class="font-rale font-size-12">
-                <a href="login.html" class="px-3 border-right border-left text-dark">Login</a>
-                <a href="register.html" class="px-3 border-right text-dark">Register</a>
-                <a href="#" class="px-3 border-right text-dark">Whislist(0)</a>
-            </div>
+                <p class="font-rale font-size-12 text-black-50 m-0"></p>
+    
+                <div class="font-rale font-size-14">
+                    <a href="#" class="signin px-3 border-right border-left text-dark">Login</a>
+                    <a href="#" class="px-3 border-right text-dark">Register</a>
+                    <a href="#" class="px-3 border-right text-dark">Whislist (0)</a>
+                </div>
         </div>
 
         <!-- Start Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark color-second-bg fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
             <a class="navbar-brand" href="#">Laptop City</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -74,42 +74,23 @@
               </form>
             </div>
         </nav>
-          <!-- End Navigation Bar -->
+        <!-- End Navigation Bar -->
+        
     </header>
     <!-- End Header -->
-        
-    <!-- JQuery script for loading data into div -->
-    <!-- <script>
-        $.get('content.html')
-            .success(function(data) {
-                $('#main-content').html(data);
-        });
-
-        $.get('login.html')
-            .success(function(data) {
-                $(".signin").click(function(){
-                $('#test-content').html(data);
-            });
-        });
-    </script> -->
 
     <!-- Start Main Content -->
-    <main id="main-content">
-        <section id="banner-area">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="./assets/header-photo1.png" alt="Banner1">
-                </div>
-                <div class="item">
-                    <img src="./assets/header-photo2.png" alt="Banner2">
-                </div>
+    <main id="main-content" class="pt-5">
+        <section id="banner-area" class="pt-3">
+            <div class="item pb-5">
+                <img src="./assets/header-photo2.png" alt="Banner1" class="img-fluid">
             </div>
         </section>
         <!-- End Owl-Carousel-2 -->
     
         <!-- Start Top Sale -->
         <section id="top-sale">
-            <div class="container py-5">
+            <div class="container pb-5">
                 <h4 class="font-rubik font-size-20">Top Sale</h4>
                 <hr>
     
@@ -792,7 +773,7 @@
                             <h5 class="card-title font-size-16">Upcoming Laptops</h5>
                             <img src="./assets/blog/blog1.jpg" alt="card-image" class="card-img-top">
                             <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus pariatur sed odio dignissimos veritatis eius quidem voluptatum enim laudantium excepturi!</p>
-                            <a href="#" class="color-second text-left">Go somewhere</a>
+                            <a href="#" class="color-second text-left">Read this article</a>
                         </div>
                     </div>
                     <div class="item">
@@ -800,7 +781,7 @@
                             <h5 class="card-title font-size-16">Latest on Social Media</h5>
                             <img src="./assets/blog/blog2.jpg" alt="card-image" class="card-img-top">
                             <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus pariatur sed odio dignissimos veritatis eius quidem voluptatum enim laudantium excepturi!</p>
-                            <a href="#" class="color-second text-left">Go somewhere</a>
+                            <a href="#" class="color-second text-left">Read this article</a>
                         </div>
                     </div>
                     <div class="item">
@@ -808,7 +789,7 @@
                             <h5 class="card-title font-size-16">Latest on Wed Development</h5>
                             <img src="./assets/blog/blog3.jpg" alt="card-image" class="card-img-top">
                             <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus pariatur sed odio dignissimos veritatis eius quidem voluptatum enim laudantium excepturi!</p>
-                            <a href="#" class="color-second text-left">Go somewhere</a>
+                            <a href="#" class="color-second text-left">Read this article</a>
                         </div>
                     </div>
                 </div>
